@@ -117,14 +117,6 @@ def main():
     print(f"Linear (degree=1):     R²={r2_lin:.4f}")
     print(f"Polynomial (degree=2): R²={r2_p2:.4f}  → {'✓ Better' if r2_p2 > r2_lin else '✗ Worse'}")
     print(f"Polynomial (degree=3): R²={r2_p3:.4f}  → {'✓ Better' if r2_p3 > r2_lin else '✗ Worse'}")
-    print()
-    print("Key observations:")
-    print("• The true underlying relationship is y = 2*x² - 3*x (quadratic).")
-    print("• Polynomial degree=2 should capture this relationship well.")
-    print("• Degree=3 may overfit on this small dataset (n=30).")
-    print("• With limited test samples, higher degrees risk memorizing")
-    print("  noise rather than generalizing the true pattern.")
-    print()
 
 
 if __name__ == "__main__":
